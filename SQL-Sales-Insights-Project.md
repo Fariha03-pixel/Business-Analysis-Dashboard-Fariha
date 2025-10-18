@@ -47,3 +47,10 @@ GROUP BY Customer_Name
 ORDER BY Total_Spent DESC
 LIMIT 5;
 
+SELECT 
+    c.Region,
+    ROUND(SUM(o.Revenue) / COUNT(DISTINCT o.Order_ID), 2) AS Avg_Order_Value
+FROM Orders o
+JOIN Customers c ON o.Customer_ID = c.Customer_ID
+GROUP BY c.Region
+ORDER BY Avg_Order_Value DESC;
