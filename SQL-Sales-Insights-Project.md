@@ -1,56 +1,65 @@
-# 🧠 SQL Sales Insights Project
+# 📊 SQL Sales Insights Project  
 
-## 📊 Project Overview
-This project focuses on using SQL to analyse sales data and uncover key business insights such as revenue trends, customer behaviour, and product performance.  
-It simulates how a Business Analyst or Data Analyst uses structured data to support decision-making.
+## 🧠 Project Overview  
+This project analyses sales performance data to identify key business insights, such as top-performing products, high-value customers, and monthly revenue trends.  
+The goal is to simulate a real-world business analysis task and showcase SQL skills in data extraction, transformation, and reporting.  
 
-## 🎯 Objective
-To demonstrate SQL proficiency by writing queries that extract, clean, and summarise sales data — providing actionable insights for management reporting.
+---
 
-## 🧩 Tools Used
-- **SQL (MySQL / PostgreSQL)** – For querying and data transformation  
-- **Excel / Power BI** – For optional visualisation and report formatting  
+## 🗂️ Dataset Information  
+The dataset used represents a fictional company’s sales records with the following structure:  
 
-## 📂 Dataset
-A fictional dataset containing the following tables:
-- **Customers**: Customer_ID, Name, Region, Age_Group  
-- **Products**: Product_ID, Category, Unit_Price  
-- **Orders**: Order_ID, Customer_ID, Product_ID, Quantity, Order_Date, Revenue  
+| Column Name | Description |
+|--------------|-------------|
+| order_id | Unique identifier for each order |
+| order_date | Date of purchase |
+| customer_id | Unique identifier for each customer |
+| region | Geographical region of sale |
+| product | Product name |
+| quantity | Number of items sold |
+| unit_price | Price per item |
+| total_sales | Total order value (quantity * unit_price) |
 
-*(If you use Kaggle or another open dataset later, just update this section with the link.)*
+---
 
-## 🧮 Key SQL Queries
+## 🧩 SQL Objectives  
+This project focuses on answering key business questions using SQL queries:  
+1. What are the **total sales by region**?  
+2. What is the **monthly sales trend**?  
+3. Who are the **top 5 customers by total spending**?  
+4. What is the **average order value by region**?  
 
-### 1️⃣ Total Revenue by Product Category
+---
+
+## 🧱 SQL Queries  
+
+### 1️⃣ Total Sales by Region
 ```sql
 SELECT 
-    p.Category, 
-    SUM(o.Revenue) AS Total_Revenue
-FROM Orders o
-JOIN Products p ON o.Product_ID = p.Product_ID
-GROUP BY p.Category
-ORDER BY Total_Revenue DESC;
+    region,
+    SUM(total_sales) AS total_sales_value
+FROM sales
+GROUP BY region
+ORDER BY total_sales_value DESC;
 
 SELECT 
-    DATE_FORMAT(Order_Date, '%Y-%m') AS Month,
-    SUM(Revenue) AS Monthly_Revenue
-FROM Orders
-GROUP BY Month
-ORDER BY Month;
+    DATE_FORMAT(order_date, '%Y-%m') AS month,
+    SUM(total_sales) AS monthly_sales
+FROM sales
+GROUP BY month
+ORDER BY month;
 
 SELECT 
-    c.Name AS Customer_Name,
-    SUM(o.Revenue) AS Total_Spent
-FROM Orders o
-JOIN Customers c ON o.Customer_ID = c.Customer_ID
-GROUP BY Customer_Name
-ORDER BY Total_Spent DESC
+    customer_id,
+    SUM(total_sales) AS total_spent
+FROM sales
+GROUP BY customer_id
+ORDER BY total_spent DESC
 LIMIT 5;
 
 SELECT 
-    c.Region,
-    ROUND(SUM(o.Revenue) / COUNT(DISTINCT o.Order_ID), 2) AS Avg_Order_Value
-FROM Orders o
-JOIN Customers c ON o.Customer_ID = c.Customer_ID
-GROUP BY c.Region
-ORDER BY Avg_Order_Value DESC;
+    region,
+    AVG(total_sales) AS avg_order_value
+FROM sales
+GROUP BY region
+ORDER BY avg_order_value DESC;
