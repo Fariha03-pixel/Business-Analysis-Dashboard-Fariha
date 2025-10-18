@@ -1,44 +1,70 @@
-# Fariha Anam Soa Md - Business Analyst Portfolio
+# 💼 Fariha Md — Business & Data Analyst Portfolio
 
-Welcome to my Business Analyst & Data Projects portfolio!  
-This repository showcases my hands-on work using tools such as **Power BI, Excel, and SQL** to turn data into actionable business insights.
-
----
-
-## 📊 Projects
-
-### 1. Sales Dashboard (Power BI)
-- **Goal:** Visualise sales trends, top-performing regions, and customer segments.  
-- **Tools:** Power BI, Excel  
-- **Highlights:** Interactive filters, KPIs, and DAX measures.  
-- **Dataset:** Sample Superstore (Kaggle dataset).
-
-### 2. Customer Data Analysis (SQL)
-- **Goal:** Analyse customer retention and revenue by region.  
-- **Tools:** SQL, Excel  
-- **Highlights:** Joins, subqueries, and data cleaning.
-
-### 3. Marketing Insights (Excel Dashboard)
-- **Goal:** Create a marketing performance dashboard using Excel pivot tables and charts.  
-- **Tools:** Excel  
-- **Highlights:** Conditional formatting, slicers, and calculated fields.
+Welcome to my professional portfolio!  
+I am a detail-oriented and data-driven Business Analyst with strong analytical, reporting, and problem-solving skills.  
+This repository showcases my practical projects using **SQL**, **Power BI**, and **Excel** — demonstrating my ability to turn raw data into meaningful insights that support business decisions.
 
 ---
 
-## 🧠 Skills Demonstrated
-- Power BI (data modelling, DAX, dashboards)
-- SQL (queries, joins, aggregations)
-- Excel (pivot tables, charts, dashboards)
-- Business analysis & reporting
+## 📊 Projects Overview
+
+### 1️⃣ SQL Sales Insights Project
+**Tools:** SQL Server, Excel  
+**Description:**  
+Queried and analysed a sales dataset to extract key business insights such as revenue trends, customer segmentation, and regional performance.  
+**Highlights:**  
+- Used `GROUP BY`, `JOIN`, and `CASE` statements for insights  
+- Identified top customers, sales trends, and region-based growth  
+📂 [View Project](SQL-Sales-Insights-Project.md)
 
 ---
 
-## 🚀 About Me
-🎓 BSc (Hons) Computing for Business, University of East London (First-Class Honours)  
-💡 Passionate about technology, data-driven insights, and continuous learning.  
+### 2️⃣ Power BI Sales Dashboard
+**Tools:** Power BI, DAX, Excel  
+**Description:**  
+Developed an interactive sales dashboard visualising KPIs, top-performing products, and monthly revenue trends.  
+**Highlights:**  
+- Created slicers, DAX measures, and dynamic visuals  
+- Presented insights for decision-making and profitability tracking  
+📂 [View Project](PowerBI-Sales-Dashboard.md)
+
+---
+
+### 3️⃣ Excel Retail Performance Dashboard
+**Tools:** Microsoft Excel  
+**Description:**  
+Built a comprehensive dashboard using pivot tables, charts, and formulas to monitor sales, profit, and regional performance.  
+**Highlights:**  
+- Used advanced Excel functions: `VLOOKUP`, `SUMIFS`, and `AVERAGEIFS`  
+- Applied conditional formatting and interactive filters  
+📂 [View Project](Excel-Retail-Performance-Dashboard.md)
+
+---
+
+## 🧠 Core Skills
+- SQL & Data Querying  
+- Power BI & Data Visualisation  
+- Excel Dashboards & Reporting  
+- Business Analytics & KPI Tracking  
+- Data Cleaning & Transformation  
+- Problem Solving & Insight Presentation  
+
+---
+
+## 🧩 Tools & Technologies
+**Languages:** SQL, Python (basic)  
+**Analytics:** Power BI, Excel, Tableau  
+**Databases:** MySQL, SQL Server  
+**Business Tools:** Microsoft 365, Google Workspace  
+
+---
+
+## 🌍 About Me
+🎓 BSc (Hons) Computing for Business, University of East London  
 📍 Based in London, UK  
-📧 Contact: soa66haider@gmail.com  
+💡 Passionate about transforming data into insights that drive growth and innovation.  
+📬 **Let’s Connect:** [LinkedIn](https://www.linkedin.com/in/fariha-anam-soa-md)
 
 ---
 
-⭐ *This portfolio is continuously updated with new analytics projects.*
+⭐ *Thank you for visiting my portfolio! Feel free to explore the projects and connect with me on LinkedIn for collaboration or opportunities.*
